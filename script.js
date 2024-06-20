@@ -32,6 +32,8 @@ function calculate() {
       break;
     default:
       result = 'Error';
+
+
   }
   display.value = result;
   currentNumber = '';
