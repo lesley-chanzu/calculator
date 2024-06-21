@@ -43,16 +43,16 @@ function calculate() {
 
 // Add eventListeners to the buttons
 const numberButton = document.querySelectorAll('.number-button');
-numberButtons.forEach(button => {
-  button.addEventListener('click', () => {
+numberButtons.forEach(button =>{
+  button.addEventListener('click', ()=>{
     numInput.value += button.textContent;
   });
 });
 
 // Adding eventListeners to the operators
 const operatorButtons = document.querySelectorAll('operator-button');
-operatorButtons.forEach(button => {
-  button.addEventListener('click', () => {
+operatorButtons.forEach(button =>{
+  button.addEventListener('click', ()=>{
     currentNumber = numInput.value;
     operator = button.textContent;
     numInput.value = '';
